@@ -7,15 +7,16 @@ const tracks = [
     {titulo:'', artista:'paco osuna', genero:'tech house', sello:'', precio:'350'}
 ];
 
-// let genero = prompt('Que genero queres buscar?');
-// function buscarGenero(genero){
-//     if(genero === 'minimal'){
-//         return resultadoMinimal;
-//     }
-// };
 
-let resultadoMinimal = tracks.filter(tipo => tipo.genero === 'minimal' );
+let genero = prompt("Ingrese el genero a buscar");
 
+let trackFiltrado = tracks.filter(track => track.genero === genero);
 
+// let resultadoFiltro = `Titulo: ${trackFiltrado.titulo}
+// Artista: ${trackFiltrado.artista}
+// Genero: ${trackFiltrado.genero}
+// Sello: ${trackFiltrado.sello}
+// Precio: $${trackFiltrado.precio}`
+// ;
 
-console.log(resultadoMinimal);
+console.log(trackFiltrado);
