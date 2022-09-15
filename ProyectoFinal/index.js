@@ -12,11 +12,23 @@ let genero = prompt("Ingrese el genero a buscar");
 
 let trackFiltrado = tracks.filter(track => track.genero === genero);
 
-// let resultadoFiltro = `Titulo: ${trackFiltrado.titulo}
-// Artista: ${trackFiltrado.artista}
-// Genero: ${trackFiltrado.genero}
-// Sello: ${trackFiltrado.sello}
-// Precio: $${trackFiltrado.precio}`
-// ;
-
 console.log(trackFiltrado);
+
+//Carrito
+
+const carrito = [];
+for(let i = 0; i < 2; i++){
+    let titulo = prompt("ingrese el titulo");
+    let artista = prompt("ingrese el artista");
+    let genero = prompt("ingrese el genero");
+    let sello = prompt("ingrese el sello");
+    let precio = prompt("ingrese el precio");
+    let track = {
+        titulo,
+        artista,
+        genero,
+        sello,
+        precio
+    }
+    carrito.push(track);
+}
